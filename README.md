@@ -27,7 +27,7 @@ Development using Typescript, Expo and React Native fetching data from the API a
   - Ads posted by game
   - User discord posted in ad
   
-  <img src="https://user-images.githubusercontent.com/91629999/192654683-cb3ab6a3-e794-4b46-9a32-0b882796e927.jpeg" width="320"/> <img src="https://user-images.githubusercontent.com/91629999/192654758-fd7c8d24-4bd9-49d8-b05c-2e8e034af7fa.jpeg" width="320"/>  <img src="https://user-images.githubusercontent.com/91629999/192654813-0492cd9f-1522-4b4a-b865-715dba89146c.jpeg" width="320"/>
+  <img src="https://user-images.githubusercontent.com/91629999/192654683-cb3ab6a3-e794-4b46-9a32-0b882796e927.jpeg" width="200"/> <img src="https://user-images.githubusercontent.com/91629999/192654758-fd7c8d24-4bd9-49d8-b05c-2e8e034af7fa.jpeg" width="200"/>  <img src="https://user-images.githubusercontent.com/91629999/192654813-0492cd9f-1522-4b4a-b865-715dba89146c.jpeg" width="200"/>
 
 
  ### Frontend web app
