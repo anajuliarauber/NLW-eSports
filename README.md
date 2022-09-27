@@ -45,7 +45,7 @@ In the corresponding directory, you can run:
    
    - Mobile
    ```sh
-   npm expo start
+   npx expo start
    ```
    
    - Web
