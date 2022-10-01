@@ -4,8 +4,8 @@
   "description": "## Table of contents",
   "main": "index.js",
   "scripts": {
-    "install": "cd web && npm install --dev && cd ../server && npm install --dev && cd ../mobile && npm install --dev",
-    "build": "cd web && npm run build && cd ../server && npm run build && cd ../mobile && npm run build",
+    "install": "cd web && npm install --dev && cd ../server && npm install --dev",
+    "build": "cd web && npm run build && cd ../server && npm run build",
     "start": "cd server/dist && node index.js"
   },
   "repository": {
