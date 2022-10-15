@@ -5,17 +5,19 @@ import * as Dialog from '@radix-ui/react-dialog';
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
 import axios from 'axios';
 import { Check, GameController } from 'phosphor-react';
+import { yupResolver } from '@hookform/resolvers/yup';
 
 import { Input } from '../Input';
 
 import { Game } from './types';
+import { schema } from './schemas';
 
 export function CreateAdForm() {
   const [games, setGames] = useState<Game[]>();
   const [weekDays, setWeekDays] = useState<string[]>([]);
   const [useVoiceChannel, setUseVoiceChannel] = useState<boolean>(false);
 
-  const { handleSubmit, register, control } = useForm();
+  const { handleSubmit, register, control } = useForm({ resolver: yupResolver(schema) });
 
   useEffect(() => {
     axios('http://localhost:3333/games').then((response) => setGames(response.data));
@@ -51,7 +53,7 @@ export function CreateAdForm() {
         </label>
         <select
           id="game"
-          className="bg-zinc-900 py-3 px-4 rounded text-sm placeholder:text-zinc-500 appearance-none"
+          className="bg-zinc-900 py-3 px-4 rounded text-sm placeholder:text-zinc-500 appearance-none border-2 border-zinc-900"
           defaultValue=""
           {...register('game')}
         >
@@ -206,7 +208,7 @@ export function CreateAdForm() {
         Costumo me conectar ao chat de voz
       </label>
 
-      <footer className="mt-4 flex justify-end gap-4">
+      <footer className="mt-4 flex justify-center gap-4">
         <Dialog.Close
           type="button"
           className="bg-zinc-500 px-5 h-12 rounded-md font-semibold hover:bg-zinc-600"
